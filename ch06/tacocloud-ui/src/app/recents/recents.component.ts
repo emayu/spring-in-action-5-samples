@@ -16,6 +16,7 @@ export class RecentTacosComponent implements OnInit {
 
   ngOnInit() {
     this.httpClient.get('http://localhost:8080/design/recent') // <1>
-        .subscribe(data => this.recentTacos = data);
+    .catch( e => this.recentTacos = [])    
+    .subscribe(data => this.recentTacos = data);
   }
 }

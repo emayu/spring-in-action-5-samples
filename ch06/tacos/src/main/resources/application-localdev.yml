@@ -1,0 +1,46 @@
+security:
+  user:
+    name: buzz
+    password: infinity
+
+taco:
+  orders:
+    pageSize: 10
+
+
+  discount:
+    codes:
+      abcdef: 10
+      
+#logging:
+#  level:
+#    org.springframework.data.rest: debug
+
+spring:
+  data:
+    rest:
+      base-path: /api 
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/tacocloud
+    username: root
+    password: mysql
+  jpa:
+    generate-ddl: true
+    database-platform: org.hibernate.dialect.MySQL57Dialect
+    driverClassName: com.mysql.cj.jdbc.Driver
+    hibernate:
+      ddl-auto: create
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    
+
+
+
+  
+
+
+    
+logging:
+  level:
+    tacos: WARN
+    

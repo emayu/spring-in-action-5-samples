@@ -19,16 +19,25 @@ taco:
 spring:
   data:
     rest:
-      base-path: /api
+      base-path: /api 
+  # datasource:
+  #   url: jdbc:mysql://127.0.0.1:3306/tacocloud
+  #   username: root
+  #   password: mysql
+  # jpa:
+  #   generate-ddl: true
+  #   database-platform: org.hibernate.dialect.MySQL57Dialect
+  #   driverClassName: com.mysql.cj.jdbc.Driver
+  #   hibernate:
+  #     naming:
+  #       physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    
 
----
-spring:
-  profiles: prod
+
+
   
-  datasource:
-    url: jdbc:mysql://localhost/tacocloud
-    username: tacouser
-    password: tacopassword
+
+
     
 logging:
   level:
